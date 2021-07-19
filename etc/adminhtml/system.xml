@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="cron" translate="label" sortOrder="10">
+            <label>Cron Analyser</label>
+        </tab>
+        <section id="analyser" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Settings</label>
+            <tab>cron</tab>
+            <resource>Cron_Analyser::analyser_config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>General Configuration</label>
+                <field id="threshold" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Job Report Threshold</label>
+                    <comment>No of hours for unfinished job to be reported from current time</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Cron_Analyser::analyser" title="Cron Analyser" module="Cron_Analyser" sortOrder="33" resource="Cron_Analyser::analyser"/>
+        <add action="cron_analyser/analyser/index" id="Cron_Analyser::analyser_analyser" module="Cron_Analyser" parent="Cron_Analyser::analyser" resource="Cron_Analyser::list" sortOrder="999" title="Manage Crons"/>
+    </menu>
+</config>
